@@ -14,8 +14,9 @@
     --app-blue-hover: #364ee6;
 }
 
+
 body {
-    background-color: #000;
+    background-color: #f1f2f3;
 }
 
 .container {
@@ -29,18 +30,67 @@ body {
     place-items: center;
     justify-content: center;
     position: relative;
-    
+
 }
+
 .main-box {
-    background-color: var(--app-dark-bg);
-    width: 500px;
+    background-color: #fff;
+    width: 650px;
     height: 450px;
     gap: 5px;
-    padding: 10px;
     margin-top: 5px;
     border-radius: 10px;
-    display: grid;
+    display: flex;
+
+}
+
+.photo {
+    width: 50%;
+    height: 100%;
+    background: url(../img/login2.jpg)center no-repeat;
+}
+
+.data {
+    padding: 30px;
+    width: 50%;
+}
+
+h2 {
+    font-size: 19px;
+}
+
+.heading {
+    width: 100%;
+    text-align: right;
+}
+
+.me {
+    color: #ff833c;
+}
+
+.statement {
+    font-size: 14px;
+    color: #69696b;
+}
+
+.lines {
+    width: 100%;
+    height: 75px;
+    display: flex;
     place-items: center;
+}
+
+.fir-line {
+    width: 50%;
+    height: 2px;
+    background-color: #555558;
+}
+
+.sec-line {
+    width: 50%;
+    height: 2px;
+    background-color: var(--app-orange);
+    margin-left: 2px;
 }
 
 form {
@@ -52,25 +102,52 @@ form {
 .password {
     margin-top: 5px;
     appearance: none;
-    width: 75%;
+    width: 100%;
     padding: 5px;
     height: 46px;
-    text-align: center;
-    border-radius: 10px;
-    color: #fff;
+    color: rgb(19, 17, 17);
     font-size: 16px;
     inset: auto 50px 50px auto;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px;
-    background-color: rgb(139, 93, 93);
+    background-color: #f3f7f6;
 }
 
-.create,.login {
-    margin-top: 5px;
-    width: 120px;
+.login {
+    margin-right: 50px;
+}
+
+.options {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.remember {
+    text-align: left;
+    width: 50%;
+    font-size: 15px;
+}
+
+.forgot {
+    text-align: right;
+    width: 50%;
+    font-size: 15px;
+}
+
+
+
+.buttons {
+    display: flex;
+}
+
+.create,
+.login {
+    margin-top: 20px;
+    width: 50%;
     padding: 5px;
-    height: 46px;
+    height: 35px;
+    margin-right: 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     font-size: 16px;
     inset: auto 50px 50px auto;
@@ -80,4 +157,9 @@ form {
 
 select {
     font-size: 10px;
+}
+
+.error {
+    height: 40px;
+    width: 100%;
 }

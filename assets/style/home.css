@@ -64,6 +64,8 @@ nav ul li+li {
     margin-left: 18px;
 }
 
+
+
 /* --------------- */
 /* Section          */
 /* --------------- */
@@ -90,6 +92,12 @@ nav ul li+li {
 
 }
 
+.data {
+    display: grid;
+    place-items: center;
+    height: 400px;
+}
+
 .procenter {
     width: 100%;
     display: grid;
@@ -100,8 +108,14 @@ nav ul li+li {
 .profile {
     height: 100px;
     width: 100px;
+    background-image: center center / cover no-repeat;
+}
+
+.img-rad {
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
-    background-color: #000;
+
 }
 
 .name {
@@ -114,9 +128,7 @@ nav ul li+li {
 }
 
 .instalink {
-    display: flex;
-    height: 70px;
-align-items: center;
+    height: 30px;
 }
 
 .link {
@@ -157,26 +169,65 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
 .posts {
-    background-color: #fff;
     width: 500px;
-    margin-top: 20px;
-    padding: 5px;
+    margin-top: 10px;
+    padding: 15px;
     border-radius: 2px;
-    height: 300px;
+    min-height: 300px;
+}
+
+.hello {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.hello+.hello {
+    margin-top: 5px;
+
 }
 
 
-.data {
-    height: 400px;
+
+.upgrade-button {
+    width: 150px;
+    height: 30px;
+    color: #fff;
+    background-color: #ff833c;
+    border-radius: 50px;
+
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.images {
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.name {
+    color: rgb(73, 71, 71);
+    font-weight: bold;
+}
+
+.date {
+    color: #636464;
 }
 
 .randomUser {

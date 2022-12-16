@@ -26,18 +26,18 @@ const create = select('.create');
 const error = select('.error');
 
 
-localStorage.setItem('preEmail', 'pr');
-localStorage.setItem('prePass', '12');
 
-let enterEmail = email.value.trim();
-let enterPass = pass.value.trim();
+localStorage.setItem('preEmail', 'preet@gmail.com');
+localStorage.setItem('prePass', '123');
 
-onEvent('click', login, function(e) {
+onEvent('click', login, function (e) {
     e.preventDefault();
-    if (email.value === '' || pass.value === '') {
+    let checkEmail = email.value.trim();
+    let checkPass = pass.value.trim();
+    if (checkEmail === '' || checkPass === '') {
         error.innerText = 'Please enter Details';
 
-    } else if (enterEmail === localStorage.preEmail && enterPass === localStorage.prePass) {
+    } else if (checkEmail === localStorage.preEmail && checkPass === localStorage.prePass) {
         console.log('hello');
         let url = './home.html';
         window.location.assign(url);

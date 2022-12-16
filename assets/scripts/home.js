@@ -20,6 +20,7 @@ function print(arg) {
 
 const randomUser = select('.randomUser');
 const picture = select('body');
+const log = select('.log');
 const url = 'https://randomuser.me/api/?nat=CA&results=10'
 
 const options = {
@@ -53,12 +54,12 @@ function printUsers(users) {
 
         randomUser.appendChild(newDiv);
         newDiv.classList.add('frame');
-        
+
         let photo = document.createElement('img');
         newDiv.appendChild(photo);
         photo.classList.add('photo');
         photo.style.background = `#000 url(${Imgurl}) center center / cover no-repeat `;
-        
+
         let nameCity = document.createElement("div");
         nameCity.classList.add('nameCity')
         newDiv.appendChild(nameCity);
@@ -75,5 +76,10 @@ function printUsers(users) {
 
     }
 }
+onEvent('click', log, function () {
+    let url = './index.html';
+    window.location.assign(url);
+})
+
 
 getRandomUsers();
