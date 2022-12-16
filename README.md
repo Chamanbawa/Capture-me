@@ -1,8 +1,6 @@
 ## Click me if you can
-
-A simple Contact application
+Click for new posts
 
 ### Demo
 
-Click [here](https://chamanbawa.github.io/Contacts/ ) to Save or delete your Contacts.
-
+Click [here]( https://chamanbawa.github.io/Direct-me/)  to check this project.
