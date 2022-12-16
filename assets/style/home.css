@@ -1,0 +1,351 @@
+@import "./reset.css";
+/* ------------------- */
+/*   Header            */
+/* ------------------- */
+
+
+body {
+    background-color: #f1f2f3;
+}
+
+header {
+    height: 56px;
+    background-color: #fff;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 40%;
+    height: 56%;
+}
+
+.title h1 {
+    font-size: 18px;
+    font-weight: 550;
+    line-height: 56px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(10, 10, 10);
+    letter-spacing: 0.2px;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: rgb(3, 3, 3);
+    font-weight: 525;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    font-family: Madefor, Helvetica Neue, Helvetica, Arial, Hiragino Kaku Gothic Pro W3, Hiragino Kaku Gothic Pro, sans-serif !important;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li+li {
+    margin-left: 18px;
+}
+
+/* --------------- */
+/* Section          */
+/* --------------- */
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.center {
+    min-height: calc(100vh - 56px - 65px);
+    display: flex;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.data,
+.randomUser {
+    background-color: #fff;
+    width: 300px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+
+.procenter {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.name {
+    text-align: center;
+}
+
+.os {
+    text-align: center;
+    color: #888787;
+}
+
+.instalink {
+    display: flex;
+    height: 70px;
+align-items: center;
+}
+
+.link {
+    color: #000;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(22, 44, 141);
+}
+
+.list {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.follower {
+    border: 1px solid#f1f2f3;
+    width: 50%;
+    text-align: center;
+    border-left: 0px;
+}
+
+.following {
+    width: 50%;
+    border: 1px solid#f1f2f3;
+    text-align: center;
+    border-right: 0px;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+.posts {
+    background-color: #fff;
+    width: 500px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 2px;
+    height: 300px;
+}
+
+
+.data {
+    height: 400px;
+}
+
+.randomUser {
+    background-color: transparent;
+}
+
+.know {
+    background-color: #fff;
+    border-radius: 2px;
+    height: 50px;
+    padding: 5px;
+    font-size: 12px;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.frame {
+    background-color: #fff;
+    border-radius: 2px;
+    height: 60px;
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    gap: 5px;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+.nameCity {
+    text-align: center;
+}
+
+.photo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+/* -------------------------- */
+/* Media queries              */
+/* -------------------------- */
+/*  1280 px and down */
+@media (max-width: 1681) {
+
+    .btn {
+        font-size: 11px;
+    }
+}
+
+/*  768 px and down */
+@media (max-width: 768px) {
+
+    .column {
+        width: calc(50% - 10px);
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+}
+
+/*  480 px and down */
+@media (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+
+}
+
+/* --------------- */
+/* footer          */
+/* --------------- */
+
+.flexbox {
+    display: flex;
+}
+
+footer {
+    height: 65px;
+    background-color: #fff;
+}
+
+div .icons {
+    width: 50%;
+    text-align: left;
+}
+
+div .icons ul {
+    list-style: none;
+}
+
+div .icons ul li {
+    display: inline;
+    line-height: 66px;
+    cursor: default;
+}
+
+div .icons ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.icons li {
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.icons ul li+li {
+    margin-left: 18px;
+}
+
+.fb {
+    color: #3b5998;
+}
+
+.twitter {
+    color: #00acee;
+}
+
+.google {
+    color: #4285F4;
+}
+
+.copy {
+    width: 50%;
+    height: 56%;
+}
+
+.copy p {
+    font-size: 17px;
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    line-height: 66px;
+    color: #000;
+    letter-spacing: 0.2px;
+}

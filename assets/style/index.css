@@ -1,0 +1,83 @@
+@import "./reset.css";
+
+/* ------------------- */
+/*                      */
+/* ------------------- */
+:root {
+
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin: auto;
+}
+
+.center {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.main-box {
+    background-color: var(--app-dark-bg);
+    width: 500px;
+    height: 450px;
+    gap: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+form {
+    width: 100%;
+
+}
+
+.email,
+.password {
+    margin-top: 5px;
+    appearance: none;
+    width: 75%;
+    padding: 5px;
+    height: 46px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    inset: auto 50px 50px auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px;
+    background-color: rgb(139, 93, 93);
+}
+
+.create,.login {
+    margin-top: 5px;
+    width: 120px;
+    padding: 5px;
+    height: 46px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    inset: auto 50px 50px auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px;
+    background-color: var(--app-orange);
+}
+
+select {
+    font-size: 10px;
+}
