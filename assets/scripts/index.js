@@ -22,6 +22,7 @@ function print(arg) {
 const email = select('.email');
 const pass = select('.password');
 const login = select('.login');
+const show = select('.show');
 const create = select('.create');
 const error = select('.error');
 
@@ -43,8 +44,20 @@ onEvent('click', login, function (e) {
         window.location.assign(url);
 
     } else {
-        error.innerText = 'Incorrect password or uerName';
+        error.innerText = 'Incorrect password or userName';
 
     }
+});
+
+function showPass() {
+    if (pass.type === "password") {
+      pass.type = "text";
+    } else {
+      pass.type = "password";
+    }
+  }
+onEvent('click', show, function(){
+    showPass();
+console.log('h3llo')
 });
 
